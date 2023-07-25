@@ -3,10 +3,14 @@ function fullName(firstName, lastName) {
     return fullName
 }
 
+console.log('Your Fullname',fullName('Raheem', 'Sodiq'));
+
 function addNumbers(num1, num2) {
     return num1+num2
     
 }
+
+console.log('Your sum of number', addNumbers(10, 15));
 
 function areaOfCircle(radius) {
     if (radius < 0) {
@@ -18,13 +22,15 @@ function areaOfCircle(radius) {
     }
     
 }
-var radius = 5;
-var circleArea = areaOfCircle(radius);
+
+console.log('Area Of Circle', areaOfCircle(10));
 
 function converOc(Oc) {
     const result = (Oc*9/5)+32
     return result  
 }
+
+
 function Bmi(weight, height) {
     var Bmi = weight / (height * height);
     if (Bmi < 18.5) {
@@ -40,6 +46,9 @@ function Bmi(weight, height) {
         return "you are obese"
     }
 }
+
+console.log('BMI', Bmi(10, 15));
+
 function checkSeason(month) {
     if (month >= 1 && month <= 12) {
         if (month >= 3 && month <= 5) {
@@ -57,5 +66,6 @@ function checkSeason(month) {
     } else {
         return "input a valid month number between 1-12"
     }
-}    
+}
 
+console.log('checkSeason', checkSeason(10));
