@@ -1,18 +1,43 @@
+const countries = [
+     'Albania',
+      'Bolivia',
+      'Canada',
+      'Denmark',
+      'Ethiopia',
+      'Finland',
+      'Germany',
+      'Hungary',
+      'Ireland',
+      'Japan',
+      'Kenya',
+    ]
+     
+    const webTechs = [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Redux',
+      'Node',
+      'MongoDB',
+    ]
+
+
 const emptyArray = [];
 
-const arrayWithElements = [1, 2, 3, ‘boy’, ‘girl’, ‘man’, ‘woman’];
+const arrayWithElements = [1, 2, 3, 'boy', 'girl', 'man', 'woman'];
 
 const lengthOfArray = countries.length;
-console.log(lengthOfArray);
+console.log("length of country: ",lengthOfArray);
 
 const firstItem = countries[0];
 const middleItem = countries[Math.floor(countries.length / 2)];
 const lastItem = countries[countries.length - 1];
-console.log(firstItem, middleItem, lastItem);
+console.log("First, Middle and Last country",firstItem, middleItem, lastItem);
 
 const mixedDataTypes = [1, 'two', 4, 5, 6, true, null, { name: 'John' }];
 const lengthOfMixedArray = mixedDataTypes.length;
-console.log(lengthOfMixedArray);
+console.log("length",lengthOfMixedArray);
 
 const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 
@@ -68,16 +93,12 @@ console.log(middleCompanies);
 countries.shift();
 console.log(countries);
 
-const middleIndex = Math.floor(countries.length / 2);
-countries.splice(middleIndex, 1);
+const middle = Math.floor(countries.length / 2);
+countries.splice(middle, 1);
 console.log(countries);
 
 countries.pop();
 console.log(countries);
 
 const nonITCompanies = countries.filter(country => !webTechs.includes(country));
-console.log(nonITCompanies);
-
-
-
-
+console.log("Not IT companies",nonITCompanies);
